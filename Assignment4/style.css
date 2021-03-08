@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+
+}
+ nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#signup{
+    margin-right: 2rem;
+}
+
+nav{
+    background-color: #4361ee;
+    width: 100vw;
+     padding: 5px;
+     display: flex;
+     justify-content: space-between;
+     
+}
+
+.anim{
+    width: 100%;
+    height: 400px;
+    
+    margin-top: 30px;
+     background:url(https://images.unsplash.com/photo-1589820781093-64019dd3d317?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80); 
+     
+    }
+.anim {
+   
+    animation-name: change;
+    animation-duration: 20s;
+    
+    background-position: center;
+    animation-iteration-count: infinite;
+    
+
+}
+
+@media (max-width:600px)
+{
+    nav,ul{
+        flex-direction: column;
+        
+    }
+    
+}
+
+@keyframes change{
+    
+    25%{
+        background: url(https://images.unsplash.com/photo-1585155770447-2f66e2a397b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80);
+    }
+    50%{
+        background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMyKyLZA6DKIecemn59N8vD5lhFKe9fMNANQ&usqp=CAU);
+    }
+    75%{
+        background: url(https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=708&q=80);
+
+    } 
+
+    100%{ background:url(https://images.unsplash.com/photo-1589820781093-64019dd3d317?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80);
+
+    } 
+}
+
+
+.grid{
+    width: 90vw;
+    margin: 20px auto;
+    
+    display: grid;
+    
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    grid-auto-columns: minmax(250px,1fr);
+    gap: 20px;
+}
+
+.grid figure{
+    width:90%;
+   border-radius: 20px;
+    box-shadow: 20px 8px 5px rgb(131, 125, 125);
+}
+.grid figure img{
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+}
+
+figcaption h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(43, 43, 99);
+}
+figcaption p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+figcaption{
+    margin: 5px auto;
+}
+footer{
+    background-color: #2b2d42;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer ul{
+    list-style: none;
+}
