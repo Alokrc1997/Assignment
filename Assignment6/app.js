@@ -29,6 +29,7 @@ addbtn.addEventListener('click',(e)=>{
   div2.appendChild(i);
   i.style.marginLeft='1rem';
   div2.style.marginLeft='1rem';
+  div2.classList.add('size');
 
   if(text.value!="")
   {

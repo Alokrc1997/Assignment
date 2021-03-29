@@ -6,3 +6,6 @@
 .editbox{
     display: none;
 }
+.size{
+    min-width:60px;
+}
