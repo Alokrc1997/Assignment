@@ -30,7 +30,7 @@ async function fetchData(u){
 search.addEventListener('keypress',(e)=>{
     if(e.key==="Enter")
     {
-    
+    content.style.display='none';
     const val=search.value;
     search.placeholder="Searching...";
     search.value="";
@@ -53,6 +53,7 @@ search.addEventListener('keypress',(e)=>{
 })
 .catch(e=>{
     console.log(e);
+    content.style.display='none';
     alert("Something went Wrong");
 });
     }
