@@ -34,7 +34,7 @@ search.addEventListener('keypress',(e)=>{
     const val=search.value;
     search.placeholder="Searching...";
     search.value="";
-    var url=`http://api.openweathermap.org/data/2.5/weather?q=${val}&units=metric&appid=21a34e3f14ff3e98d97da47f2b0c4636`;
+    var url=`https://api.openweathermap.org/data/2.5/weather?q=${val}&units=metric&appid=21a34e3f14ff3e98d97da47f2b0c4636`;
     
     fetchData(url)
 .then((d)=>{
