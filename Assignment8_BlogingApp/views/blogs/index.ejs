@@ -1,0 +1,28 @@
+<%- include('../partials/header') %> 
+<%- include('../partials/navbar') %> 
+
+
+
+<div class="container" >
+
+<% for(let blog of allBlogs){ %> 
+<div class="card" style="max-width: 40rem;margin: 2rem auto;" >
+    <img src="<%= blog.image %> " class="card-img-top img-fluid p-3 " alt="..." style="max-height:70vh ;">
+    <div class="card-body">
+      <h5 class="card-title"><%= blog.title %> </h5>
+      <p class="card-text"><%= blog.desc %> </p>
+      <a href="/blogs/<%= blog._id %>" class="btn btn-outline-info " >View Info</a>
+    </div>
+    
+  </div>
+
+  <% } %> 
+
+</div>
+
+
+
+
+
+
+<%- include('../partials/header') %> 

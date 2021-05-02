@@ -14,17 +14,17 @@ async function fetchData(u){
     const data =await fetch(u);
     return await data.json();
 
-    console.log(d.dt);
-    var date=  new Date(d.dt*1000);
-    console.log(date.getFullYear());
-    console.log(date.getMonth());
-    console.log(date.getDate());
-    console.log(date.getDay());
-    console.log(date.getHours());
-    console.log(date.getMinutes());
-    console.log(date.getSeconds());
-    console.log(date.toLocaleTimeString("en-US"));
-    console.log(date.toLocaleDateString("en-US"));
+    // console.log(d.dt);
+    // var date=  new Date(d.dt*1000);
+    // console.log(date.getFullYear());
+    // console.log(date.getMonth());
+    // console.log(date.getDate());
+    // console.log(date.getDay());
+    // console.log(date.getHours());
+    // console.log(date.getMinutes());
+    // console.log(date.getSeconds());
+    // console.log(date.toLocaleTimeString("en-US"));
+    // console.log(date.toLocaleDateString("en-US"));
 
 }
 search.addEventListener('keypress',(e)=>{
